@@ -80,4 +80,7 @@ nav:
     - Everyday Tools: everyday-tools.md
     - Entertainment: entertainment.md
 
+extra_css:
+  - stylesheets/extra.css
+
 copyright: Copyright &copy; 2025 Christina Mapunda
