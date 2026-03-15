@@ -166,16 +166,16 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
-  margin: 1.25rem 0 2.25rem;
+  margin: 0.9rem 0 2rem;
 }
 
 .category-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  min-height: 132px;
-  padding: 1.15rem 1.1rem;
+  justify-content: flex-start;
+  min-height: 200px;
+  padding: 1.2rem 1.15rem;
   border-radius: 22px;
   border: 1px solid rgba(15, 95, 104, 0.12);
   background:
@@ -194,6 +194,19 @@
   box-shadow: 0 22px 36px rgba(8, 33, 41, 0.14);
 }
 
+.card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-bottom: 0.85rem;
+  border-radius: 16px;
+  background: rgba(15, 143, 132, 0.1);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
 .card-title {
   margin: 0 0 0.7rem;
   text-align: left;
@@ -202,16 +215,36 @@
   line-height: 1.4;
 }
 
+.card-description {
+  margin-bottom: 1rem;
+  color: rgba(20, 30, 35, 0.72);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 .card-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-top: auto;
   padding: 0.32rem 0.72rem;
   border-radius: 999px;
   background: rgba(15, 143, 132, 0.1);
   color: var(--home-accent-deep);
   font-size: 0.76rem;
   font-weight: 700;
+}
+
+.md-typeset h2 {
+  margin-top: 0.4rem;
+}
+
+.md-typeset h3 {
+  margin: 2rem 0 0.5rem;
+  color: var(--home-accent-deep);
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
 }
 
 .site-footer {
@@ -242,6 +275,7 @@
 }
 
 [data-md-color-scheme="slate"] .hero p,
+[data-md-color-scheme="slate"] .card-description,
 [data-md-color-scheme="slate"] .site-footer,
 [data-md-color-scheme="slate"] .stat-label {
   color: rgba(232, 240, 242, 0.74);
@@ -249,8 +283,13 @@
 
 [data-md-color-scheme="slate"] .hero-kicker,
 [data-md-color-scheme="slate"] .stat-number,
-[data-md-color-scheme="slate"] .hero-button-secondary {
+[data-md-color-scheme="slate"] .hero-button-secondary,
+[data-md-color-scheme="slate"] .md-typeset h3 {
   color: #8de2d8 !important;
+}
+
+[data-md-color-scheme="slate"] .card-icon {
+  background: rgba(141, 226, 216, 0.12);
 }
 
 [data-md-color-scheme="slate"] .card-badge {
