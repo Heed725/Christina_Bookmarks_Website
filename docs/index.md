@@ -8,7 +8,6 @@
 A thoughtfully organized resource hub for GIS, remote sensing, conservation, academic research, and practical tools used in everyday work.
 
 <div class="hero-actions">
-  <a class="hero-button hero-button-primary" href="#explore">Explore categories</a>
   <a class="hero-button hero-button-secondary" href="academic-resources/">Start with research</a>
 </div>
 
