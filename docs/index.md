@@ -94,11 +94,6 @@ A thoughtfully organized resource hub for GIS, remote sensing, conservation, aca
   <span class="card-badge">9 links</span>
 </a>
 
-<a class="category-card" href="scholarships-grants/">
-  <div class="card-title">Scholarships & Grants</div>
-  <span class="card-badge">4 links</span>
-</a>
-
 </div>
 
 <div class="site-footer" markdown>
