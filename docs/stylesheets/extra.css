@@ -171,10 +171,11 @@
 
 .category-card {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  min-height: 96px;
-  padding: 1.2rem 1rem;
+  min-height: 132px;
+  padding: 1.15rem 1.1rem;
   border-radius: 22px;
   border: 1px solid rgba(15, 95, 104, 0.12);
   background:
@@ -194,11 +195,23 @@
 }
 
 .card-title {
-  margin: 0;
-  text-align: center;
+  margin: 0 0 0.7rem;
+  text-align: left;
   font-size: 1.02rem;
   font-weight: 700;
   line-height: 1.4;
+}
+
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.32rem 0.72rem;
+  border-radius: 999px;
+  background: rgba(15, 143, 132, 0.1);
+  color: var(--home-accent-deep);
+  font-size: 0.76rem;
+  font-weight: 700;
 }
 
 .site-footer {
@@ -238,6 +251,11 @@
 [data-md-color-scheme="slate"] .stat-number,
 [data-md-color-scheme="slate"] .hero-button-secondary {
   color: #8de2d8 !important;
+}
+
+[data-md-color-scheme="slate"] .card-badge {
+  background: rgba(141, 226, 216, 0.14);
+  color: #8de2d8;
 }
 
 @media screen and (max-width: 900px) {
